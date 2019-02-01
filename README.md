@@ -1,6 +1,3 @@
-# rust-guess-game
-Pet Rust Project
-
 # Usage
 Make sure that you have the latest version of cargo and rustc installed.
 
