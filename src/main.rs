@@ -5,7 +5,7 @@ use std::cmp::Ordering;
 use rand::Rng;
 
 fn main() {
-    let mut counter: i32 = 0;
+    let mut counter: usize = 0;
 
     println!("Guess the number!\n");
 
@@ -20,7 +20,7 @@ fn main() {
         io::stdin().read_line(&mut guess)
             .expect("Failed to read line");
 
-        let guess: u32 = match guess.trim().parse() {
+        let guess: usize = match guess.trim().parse() {
             Ok(num) => num,
             Err(_) => continue,
         };
