@@ -1,13 +1,5 @@
 use std::io;
 
-fn main() {
-    let option = get_input("From what to what?\n1) Farenheit -> Celsius, 2) Celsius -> Farenheit\nYour choose:".to_string());
-    let value = get_input("Enter your value:".to_string());
-    let result = convert(option, value);
-
-    println!("\nYour result: {}", result);
-}
-
 // Converting temperature
 fn convert(opt: isize, val: isize) -> std::string::String {
     if opt == 1 {
@@ -32,4 +24,12 @@ fn get_input(msg: std::string::String) -> isize {
         .trim()
         .parse()
         .unwrap()
+}
+
+fn main() {
+    let option = get_input("From what to what?\n1) Farenheit -> Celsius, 2) Celsius -> Farenheit\nYour choose:".to_string());
+    let value = get_input("Enter your value:".to_string());
+    let result = convert(option, value);
+
+    println!("\nYour result: {}", result);
 }
