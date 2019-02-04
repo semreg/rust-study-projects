@@ -8,6 +8,7 @@ fn main() {
     println!("\nYour result: {}", result);
 }
 
+// Converting temperature
 fn convert(opt: isize, val: isize) -> std::string::String {
     if opt == 1 {
         let tmp = (val - 32) * 5/9;
@@ -18,6 +19,7 @@ fn convert(opt: isize, val: isize) -> std::string::String {
     }
 }
 
+// Getting input and converting to int
 fn get_input(msg: std::string::String) -> isize {
     let mut input = String::new();
 
