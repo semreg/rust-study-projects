@@ -1,7 +1,7 @@
 # Usage
 Make sure that you have the latest version of cargo and rustc installed.
 
-To run the project type in the following command:
+To run any of apps go to some dir and type in the following command:
 
 ```
 $ cargo run
